@@ -1,0 +1,39 @@
+{
+  "name": "@ussu/attention",
+  "version": "0.1.0",
+  "description": "Sign maker",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.3.2",
+    "commander": "^2.15.1",
+    "pdfkit": "^0.8.3",
+    "typescript": "^2.7.2"
+  },
+  "bin": {
+    "timothy": "lib/cli.js"
+  },
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc",
+    "prepare": "tsc",
+    "format": "prettier \"src/**/*.ts\" --write"
+  },
+  "prettier": {
+    "printWidth": 80,
+    "tabWidth": 2,
+    "useTabs": false,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "all",
+    "bracketSpacing": true,
+    "jsxBracketSameLine": false,
+    "arrowParens": "always"
+  },
+  "devDependencies": {
+    "@types/commander": "^2.12.2",
+    "@types/node": "^9.4.7",
+    "@types/pdfkit": "^0.7.36",
+    "prettier": "^1.11.1"
+  }
+}
